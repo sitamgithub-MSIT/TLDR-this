@@ -24,8 +24,8 @@ const config: Config = {
     },
   },
   plugins: [
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:2490701310.
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:1818803698.
+    // Suggested code may be subject to a license. Learn more: ~LicenseLog:2490701310.
+    // Suggested code may be subject to a license. Learn more: ~LicenseLog:1818803698.
     require("preline/plugin"),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
