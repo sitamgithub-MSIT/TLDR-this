@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.14.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.7",
     "preline": "^2.4.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-speech-recognition": "^3.10.0",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
     "@types/node": "^20",
