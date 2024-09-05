@@ -3,11 +3,17 @@
 import Image from "next/image";
 import "regenerator-runtime/runtime";
 import { ChangeEvent, useState } from "react";
+import { IconVolume } from "@tabler/icons-react";
 import TextArea from "@/components/Inputs/TextArea";
 import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRecognition";
 
 export default function Home() {
   const [sourceText, setSourceText] = useState<string>("");
+
+  const handleAudioPlayback = (text: string) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+  };
 
   return (
     <div>
@@ -30,12 +36,16 @@ export default function Home() {
                       onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
                         setSourceText(e.target.value)
                       }
-                      placeholder="Source Language"
+                      placeholder="Enter text to translate"
                     />
                     <div className="flex flex-row justify-between w-full">
                       <span className="cursor-pointer flex space-x-2 flex-row">
                         <SpeechRecognitionComponent
                           setSourceText={setSourceText}
+                        />
+                        <IconVolume
+                          size={22}
+                          onClick={() => handleAudioPlayback(sourceText)}
                         />
                       </span>
                     </div>
