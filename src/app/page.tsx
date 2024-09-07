@@ -22,10 +22,10 @@ export default function Home() {
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
             <div className="text-center">
               <h1 className="text-4xl sm:text-6xl font-bold text-neutral-200">
-                Anuvad <span className="text-[#f87315]">AI</span>
+                TLDR <span className="text-[#f87315]">this</span>
               </h1>
               <p className="mt-3 text-neutral-400">
-                <b>Anuvad AI:</b> Translate with ease, connect the world! 🌐✨
+                <b>TLDR this:</b>⚡Instant Summaries, ✨Effortless Clarity!
               </p>
               <div className="mt-7 sm:mt-12 mx-auto max-w-3xl relative">
                 <div className="grid gap-4 md:grid-cols-2 grid-cols-1">
@@ -36,7 +36,7 @@ export default function Home() {
                       onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
                         setSourceText(e.target.value)
                       }
-                      placeholder="Enter text to translate"
+                      placeholder="Enter text to summarize"
                     />
                     <div className="flex flex-row justify-between w-full">
                       <span className="cursor-pointer flex space-x-2 flex-row">
