@@ -28,7 +28,7 @@ const useSummarize = (sourceText, selectedMode) => {
     if (sourceText.trim()) {
       const timeoutId = setTimeout(() => {
         handleSummarize(sourceText);
-      }, 500); // Adjust the delay as needed
+      }, 1000); // Adjust the delay as needed
 
       return () => clearTimeout(timeoutId);
     }
