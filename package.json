@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.17.1",
     "@tabler/icons-react": "^3.14.0",
+    "dotenv": "^16.4.5",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.7",
     "preline": "^2.4.1",
