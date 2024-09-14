@@ -56,7 +56,16 @@ export default function Home() {
     }
   };
 
-  const handleLinkPaste = (text: string) => {};
+  const handleLinkPaste = async (e: ChangeEvent<HTMLInputElement>) => {
+    const link = e.target.value;
+    try {
+      const response = await fetch(link);
+      const data = await response.text();
+      setSourceText(data);
+    } catch (error) {
+      console.error("Error fetching link content:", error);
+    }
+  };
 
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(targetText);
