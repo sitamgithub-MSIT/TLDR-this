@@ -24,6 +24,9 @@ export default function Home() {
   const [sourceText, setSourceText] = useState<string>("");
   const [copied, setCopied] = useState<boolean>(false);
   const [favorite, setFavorite] = useState<boolean>(false);
+  const [feedbackStatus, setFeedbackStatus] = useState<
+    "none" | "liked" | "disliked"
+  >("none");
   const [modes] = useState<string[]>([
     "Concise",
     "Detailed",
@@ -61,9 +64,17 @@ export default function Home() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleLike = () => {};
+  const handleLike = () => {
+    setFeedbackStatus((prevStatus) =>
+      prevStatus === "liked" ? "none" : "liked"
+    );
+  };
 
-  const handleDislike = () => {};
+  const handleDislike = () => {
+    setFeedbackStatus((prevStatus) =>
+      prevStatus === "disliked" ? "none" : "disliked"
+    );
+  };
 
   const handleFavorite = () => {
     setFavorite(!favorite);
@@ -137,8 +148,20 @@ export default function Home() {
                       {copied && (
                         <span className="text-xs text-green-500">Copied!</span>
                       )}
-                      <IconThumbUp size={22} onClick={handleLike} />
-                      <IconThumbDown size={22} onClick={handleDislike} />
+                      <IconThumbUp
+                        size={22}
+                        onClick={handleLike}
+                        className={
+                          feedbackStatus === "liked" ? "text-green-500" : ""
+                        }
+                      />
+                      <IconThumbDown
+                        size={22}
+                        onClick={handleDislike}
+                        className={
+                          feedbackStatus === "disliked" ? "text-red-500" : ""
+                        }
+                      />
                       <IconStar
                         size={22}
                         onClick={handleFavorite}
