@@ -95,7 +95,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col md:flex-row items-center justify-center p-4 md:p-8 overflow-y-auto lg:h-full">
       <div className="relative overflow-hidden h-screen">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
           <div className="text-center">
@@ -123,12 +123,13 @@ export default function Home() {
                       />
                       <IconVolume
                         size={22}
+                        className="text-gray-400"
                         onClick={() => handleAudioPlayback(sourceText)}
                       />
                       <FileUpload handleFileUpload={handleFileUpload} />
                       <LinkPaste handleLinkPaste={handleLinkPaste} />
                     </span>
-                    <span className="text-sm pr-4">
+                    <span className="text-sm pr-4 text-gray-400">
                       {sourceText.length} / 6000
                     </span>
                   </div>
@@ -149,11 +150,16 @@ export default function Home() {
                       />
                       <IconVolume
                         size={22}
+                        className="text-gray-400"
                         onClick={() => handleAudioPlayback(targetText)}
                       />
                     </span>
                     <div className="flex flex-row items-center space-x-2 pr-4 cursor-pointer">
-                      <IconCopy size={22} onClick={handleCopyToClipboard} />
+                      <IconCopy
+                        size={22}
+                        onClick={handleCopyToClipboard}
+                        className="text-gray-400"
+                      />
                       {copied && (
                         <span className="text-xs text-green-500">Copied!</span>
                       )}
@@ -161,20 +167,26 @@ export default function Home() {
                         size={22}
                         onClick={handleLike}
                         className={
-                          feedbackStatus === "liked" ? "text-green-500" : ""
+                          feedbackStatus === "liked"
+                            ? "text-green-500"
+                            : "text-gray-400"
                         }
                       />
                       <IconThumbDown
                         size={22}
                         onClick={handleDislike}
                         className={
-                          feedbackStatus === "disliked" ? "text-red-500" : ""
+                          feedbackStatus === "disliked"
+                            ? "text-red-500"
+                            : "text-gray-400"
                         }
                       />
                       <IconStar
                         size={22}
                         onClick={handleFavorite}
-                        className={favorite ? "text-yellow-500" : ""}
+                        className={
+                          favorite ? "text-yellow-500" : "text-gray-400"
+                        }
                       />
                     </div>
                   </div>

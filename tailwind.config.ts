@@ -23,6 +23,7 @@ const config: Config = {
       },
     },
   },
+  darkMode: "class",
   plugins: [
     // Suggested code may be subject to a license. Learn more: ~LicenseLog:2490701310.
     // Suggested code may be subject to a license. Learn more: ~LicenseLog:1818803698.
