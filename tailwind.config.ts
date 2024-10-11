@@ -28,6 +28,13 @@ const config: Config = {
     // Suggested code may be subject to a license. Learn more: ~LicenseLog:2490701310.
     // Suggested code may be subject to a license. Learn more: ~LicenseLog:1818803698.
     require("preline/plugin"),
+    /**
+     * Generates utility classes for background patterns using SVG data URIs.
+     * @param {Object} options - The options object.
+     * @param {Function} options.matchUtilities - Function to create matching utilities.
+     * @param {Object} options.theme - The theme configuration object.
+     * @returns {void} This function does not return a value.
+     */
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
