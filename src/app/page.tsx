@@ -20,6 +20,14 @@ import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRec
 import { rtfToText } from "@/utils/rtfToText";
 import useSummarize from "@/hooks/useSummarize";
 
+/**
+ * Renders the main home page component of the application.
+ * This component provides a user interface for text summarization, including input methods,
+ * summarization options, and various interactive features.
+ * 
+ * @returns {JSX.Element} A React component representing the home page with text input, 
+ * summarization output, and various control elements.
+ */
 export default function Home() {
   const [sourceText, setSourceText] = useState<string>("");
   const [copied, setCopied] = useState<boolean>(false);
