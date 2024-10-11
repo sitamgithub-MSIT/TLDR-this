@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 
+/**
+ * Custom React hook for text summarization with debounce functionality.
+ * @param {string} sourceText - The original text to be summarized.
+ * @param {string} selectedMode - The mode of summarization to be used.
+ * @returns {string} The summarized text.
+ */
 const useSummarize = (sourceText, selectedMode) => {
   const [targetText, setTargetText] = useState("");
 
