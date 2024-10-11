@@ -40,6 +40,12 @@ const model = genAI.getGenerativeModel({
   generationConfig: generationConfig,
 });
 
+/**
+ * Handles POST requests to summarize text using a specified mode.
+ * @param {Request} request - The incoming HTTP request object containing JSON data with sourceText and selectedMode.
+ * @returns {Promise<Response>} A JSON response containing the summarized text or an error message.
+ * @throws {Error} If there's an error during the summarization process.
+ */
 export async function POST(request) {
   try {
     const { sourceText, selectedMode } = await request.json();
