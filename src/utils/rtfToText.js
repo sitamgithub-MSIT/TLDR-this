@@ -1,3 +1,8 @@
+/**
+ * Converts Rich Text Format (RTF) content to plain text.
+ * @param {string} rtf - The RTF content to be converted.
+ * @returns {string} The converted plain text.
+ */
 export function rtfToText(rtf) {
   const rtfRegex = /\\([a-z]+)(-?\d+)? ?|[{}]|\\'([0-9a-fA-F]{2})|([^\\{}]+)/g;
   let match;
