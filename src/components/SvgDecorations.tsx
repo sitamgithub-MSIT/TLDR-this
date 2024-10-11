@@ -1,5 +1,13 @@
 import React from "react";
 
+/**
+ * Renders SVG decorations for a React component.
+ * This functional component creates two SVG elements positioned absolutely
+ * within the parent container. One SVG is placed at the top-right corner,
+ * and the other at the bottom-left corner of the container.
+ * The SVGs are hidden on small screens and visible on medium screens and larger.
+ * @returns {JSX.Element} A React fragment containing two decorative SVG elements
+ */
 const SvgDecorations: React.FC = () => {
   return (
     <>
