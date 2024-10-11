@@ -17,6 +17,10 @@ const categories = [
   { icon: IconMoodSmile, label: "Communication" },
 ];
 
+/**
+ * Renders a list of category links with icons as a React functional component.
+ * @returns {JSX.Element} A div containing a series of anchor tags, each representing a category with an icon and label.
+ */
 const CategoryLinks: React.FC = () => {
   return (
     <div className="mt-10 sm:mt-20">
