@@ -1,7 +1,14 @@
 import React from "react";
 import { IconDotsCircleHorizontal } from "@tabler/icons-react";
 
-const ModeSelector = ({ selectedMode, setSelectedMode, modes }) => (
+/**
+ * A functional component that renders a mode selector dropdown.
+ * @param {Object} props - The component props
+ * @param {string} props.selectedMode - The currently selected mode
+ * @param {function} props.setSelectedMode - Function to update the selected mode
+ * @param {string[]} props.modes - Array of available modes
+ * @returns {JSX.Element} A span element containing an icon and a select dropdown
+ */const ModeSelector = ({ selectedMode, setSelectedMode, modes }) => (
   <span className="cursor-pointer rounded-full space-x-1 pl-2 bg-[#000000] flex items-center flex-row">
     <IconDotsCircleHorizontal size={20} className="text-gray-400" />
     <select
