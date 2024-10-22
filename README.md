@@ -1,6 +1,6 @@
 # TLDR This: AI-Powered Text Summarization Tool
 
-This application provides a user-friendly interface for summarizing text using the power of Google's Gemini AI. Users can input text through various methods, choose from different input modes, and generate summaries tailored to their needs. The tool offers concise, detailed, fluent, creative, and bullet points summaries to help users process information efficiently. It is built with Next.js, Tailwind CSS, and Google Gemini AI, and deployed on Google Cloud Run.
+This application provides a user-friendly interface for summarizing text using the power of Google's Gemini AI. Users can input text through various methods, choose from different input modes, and generate summaries tailored to their needs. The tool offers concise, detailed, fluent, creative, and bullet-point summaries to help users process information efficiently. It is built with Next.js, Tailwind CSS, and Google Gemini AI, and deployed on Google Cloud Run.
 
 ## Project Structure
 
@@ -48,7 +48,7 @@ The project is structured as follows:
 - `.gitignore`: Specifies which files and directories should be ignored by Git.
 - `LICENSE`: Project licensing information.
 - `README.md`: Project documentation and setup instructions.
-- `package.json`: Project dependencies and scripts configuration.
+- `package.json`: Project dependencies and script configuration.
 - `tailwind.config.ts`: Tailwind CSS configuration for utility-first styling.
 - `tsconfig.json`: TypeScript compiler configuration.
 
@@ -86,13 +86,13 @@ To deploy the application to Google Cloud Run, follow the dedicated deployment g
 
 ## Usage
 
-This AI-powered text summarization tool is designed to help users quickly generate concise, detailed, fluent, creative, or bullet points summaries of text content. Follow these steps to use the tool effectively:
+This AI-powered text summarization tool is designed to help users quickly generate concise, detailed, fluent, creative, or bullet-point summaries of text content. Follow these steps to use the tool effectively:
 
 1. **Input Text**: Paste the text you want to summarize into the input area. There are options to input text by typing directly, pasting the web URL, uploading a text file, or recording audio.
 
 2. **Select Mode**: Choose your preferred summarization mode:
 
-   - **Concise Mode**: Provides a brief summary (30-50 words) that captures only the most essential points. Focus on the core message and key takeaways.
+   - **Concise Mode**: Provides a summary (30-50 words) that captures only the most essential points. Focus on the core message and key takeaways.
 
    - **Detailed Mode**: Generates a comprehensive summary (150-200 words) that covers main ideas and significant supporting details. Ensure a thorough representation of the original text's content and structure.
 
