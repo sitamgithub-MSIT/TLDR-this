@@ -138,7 +138,7 @@ export default function Home() {
                       <LinkPaste handleLinkPaste={handleLinkPaste} />
                     </span>
                     <span className="text-sm pr-4 text-gray-400">
-                      {sourceText.length} / 6000
+                      {sourceText.length} / 10000
                     </span>
                   </div>
                 </div>
