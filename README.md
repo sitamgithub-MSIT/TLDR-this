@@ -92,15 +92,15 @@ This AI-powered text summarization tool is designed to help users quickly genera
 
 2. **Select Mode**: Choose your preferred summarization mode:
 
-   - **Concise Mode**: Provides a summary (30-50 words) that captures only the most essential points. Focus on the core message and key takeaways.
+   - **Concise Mode**: Provides a summary (40-60 words) that captures only the most essential points. Focus on the core message and key takeaways.
 
-   - **Detailed Mode**: Generates a comprehensive summary (150-200 words) that covers main ideas and significant supporting details. Ensure a thorough representation of the original text's content and structure.
+   - **Detailed Mode**: Generates a comprehensive summary (200-250 words) that covers main ideas and significant supporting details. Ensure a thorough representation of the original text's content and structure.
 
-   - **Fluency Mode**: Creates a smooth, natural-sounding summary (80-120 words) that reads like a coherent piece of writing. Prioritize readability and flow while maintaining accuracy.
+   - **Fluency Mode**: Creates a smooth, natural-sounding summary (100-150 words) that reads like a coherent piece of writing. Prioritize readability and flow while maintaining accuracy.
 
-   - **Creative Mode**: Produces an engaging summary (60-90 words) using vivid language or analogies to make the content more memorable. Maintain the original meaning while adding a unique perspective.
+   - **Creative Mode**: Produces an engaging summary (80-120 words) using vivid language or analogies to make the content more memorable. Maintain the original meaning while adding a unique perspective.
 
-   - **Bullet Points Mode**: Summarizes the content in 5-7 clear, concise bullet points. Each point should be a complete sentence capturing a key idea from the text.
+   - **Bullet Points Mode**: Summarizes the content in 7-10 clear, concise bullet points. Each point should be a complete sentence capturing a key idea from the text.
 
 3. **Summarize**: Summarized text will be generated based on the selected mode and displayed on the output area.
 
