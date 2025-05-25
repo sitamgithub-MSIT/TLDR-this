@@ -1,5 +1,18 @@
 {
   "name": "TLDR-this",
+  "engines": {
+    "node": "20.x"
+  },
+  "description": "A Next.js application that summarizes text using Google's Generative AI.",
+  "keywords": [
+    "nextjs",
+    "google",
+    "generative-ai",
+    "summarization",
+    "tldr"
+  ],
+  "author": "Sitam Meur <sitammeur@gmail.com>",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "scripts": {
