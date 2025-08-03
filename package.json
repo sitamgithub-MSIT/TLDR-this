@@ -1,7 +1,7 @@
 {
   "name": "TLDR-this",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "description": "A Next.js application that summarizes text using Google's Generative AI model Gemini.",
   "keywords": [
@@ -25,6 +25,8 @@
   "dependencies": {
     "@google/genai": "^1.1.0",
     "@tabler/icons-react": "^3.33.0",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "dotenv": "^16.5.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "15.3.2",
