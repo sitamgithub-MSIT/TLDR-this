@@ -14,6 +14,9 @@ const config = {
   maxOutputTokens: 1024,
   responseMimeType: "text/plain",
   systemInstruction: [{ text: `${systemInstruction}` }],
+  thinkingConfig: {
+    thinkingBudget: 0,
+  },
 };
 
 /**
@@ -27,7 +30,7 @@ export async function POST(request) {
     const { sourceText, selectedMode } = await request.json();
     const prompt = `Summarize the following text in ${selectedMode} mode: ${sourceText}`;
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash-lite",
+      model: "gemini-2.5-flash-lite",
       contents: prompt,
       config,
     });
